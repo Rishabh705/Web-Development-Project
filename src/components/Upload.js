@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import '../styles/Upload.css'
 
 export default function Upload() {
@@ -17,7 +16,7 @@ export default function Upload() {
     try {
       const formData = new FormData()
       formData.append('uploaded-image', image)
-      const response = await fetch('http://localhost:3500/post-image', {
+      const response = await fetch('http://10.0.2.201:8000/model/train', {
         method: 'POST',
         body: formData
       })

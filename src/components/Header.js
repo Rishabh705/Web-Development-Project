@@ -1,14 +1,10 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import '../styles/header.css'
 import { NavLink,Link } from 'react-router-dom'
 import Hamburger from './Hamburger'
-import { BsFillCaretDownFill } from 'react-icons/bs'
 import MUISwitch from './MUISwitch'
 import ThemeContext from '../contexts/ThemeContext'
 
-const sx = {
-  mr:0
-}
 export default function Header() {
 
   const { theme } = useContext(ThemeContext)
@@ -17,7 +13,7 @@ export default function Header() {
     <div className="navbar">
 
       <div className="heading-cont">
-        <h1 className="name"><Link to="/" end="true" style={{ 'color': theme ? '#DD3B50' : '#57BDDD' }}>Cloud Builder</Link></h1>
+        <h1 className="name"><Link to="/" end="true" style={{ 'color': theme ? '#DD3B50' : '#36454F' }}>Cloud Builder</Link></h1>
       </div>
       {/* Menu Button */}
       <Hamburger />

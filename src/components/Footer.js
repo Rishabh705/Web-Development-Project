@@ -1,7 +1,6 @@
 import React,{useContext} from 'react'
 import '../styles/Footer.css'
-import github from '../img/github.png'
-import lin from '../img/linkedin.png'
+import { FaGithub } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import ThemeContext from '../contexts/ThemeContext'
 
@@ -17,8 +16,11 @@ export default function Footer() {
                 <li><Link to='/contact' style={{ 'color': theme ? '#fff' : '#000' }}>Contact</Link></li>
             </ul>
             <ul>
-                <li><a href="https://github.com/Rishabh705/skynet"><img src={github} alt="github" height={24}/></a></li>
-                <li><a href='https://www.linkedin.com/in/rishabh-singh-93b68223a'><img src={lin} alt="linkedin" height={25.4} /></a></li>
+                <li>
+                    <a href="https://github.com/SunnyKumar-iiitt/Web-Development-Project">
+                        <FaGithub size={25} color={theme ? '#e32323' : '#2bbfec'} />
+                    </a>
+                </li>
             </ul>
         </section>
 
