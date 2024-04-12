@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    padding: 0px 120px;
+    height: 5rem;
+    width: 100%;
+    overflow-x: clip;
+}
+
+.heading-cont {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.3rem;
+}
+
+.name {
+    font-family: 'Syncopate', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar a {
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.navbar-nav {
+    display: none;
+    align-items: center;
+    position: relative;
+}
+
+.navlist-1 {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    height: 60%;
+    list-style-type: none;
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+    z-index: 2;
+}
+
+.navlist-1 li {
+    position: relative;
+    width: 70px;
+    height: 100%;
+    text-align: right;
+}
+
+.icon {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* show navlist */
+.navbar-nav-show {
+    position: absolute;
+    right: 30px;
+    top:70px;
+    display: flex;
+
+}
+
+.navlist-1-show {
+    flex-flow: column;
+    gap: 20px;
+}
+
+@media screen and (max-width:575px) {
+    .name {
+        font-size: 1.9rem;
+    }
+
+    .navbar {
+        padding: 0px 32px;
+    }
+
+    .heading-cont {
+        font-size: 1.2rem;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:576px) {
+    .navbar {
+        padding: 0px 64px;
+    }
+    .navbar-nav-show{
+        right: 60px;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .navbar {
+        padding: 0px 120px;
+    }
+
+    .navbar-nav {
+        display: flex;
+    }
+
+    .overlay {
+        display: block;
+    }
+}
