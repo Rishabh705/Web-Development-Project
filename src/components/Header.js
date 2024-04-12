@@ -11,8 +11,6 @@ const sx = {
 }
 export default function Header() {
 
-  const [lang, setLang] = useState('eng')
-
   const { theme } = useContext(ThemeContext)
 
   return (
