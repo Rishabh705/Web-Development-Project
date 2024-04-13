@@ -39,7 +39,7 @@ export default function Home() {
           <div className="container2">
             <p>
               <Typewriter
-                words={['SIMPLE, SERIOUS AND IMPRESSIVE FORECASTS!']}
+                words={['Intuitive, Reliable, and Insightful Predictive Analysis!']}
                 loop={1}
                 cursor={false}
                 cursorStyle='_'
@@ -50,7 +50,7 @@ export default function Home() {
             </p>
             <p>
               <Typewriter
-                words={['Empowering You to Navigate Any Landscape with Precision and Ease.']}
+                words={['Empowering You to Harness the Cloud for Seamless and Precise Development.']}
                 loop={1}
                 cursor={false}
                 cursorStyle='_'
